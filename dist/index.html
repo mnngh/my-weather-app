@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Responsive Weather App Powered by the Open Weather A P I</h1>
+    <section id="searchBar" class="searchBar">
+      <form role="search" id="searchBar__form" class="searchBar__form">
+        <label for="search__text">Enter a new location</label>
+        <input
+          type="text"
+          role="searchbox"
+          size="40"
+          placeholder="City, State, Country"
+          autocomplete="off"
+          id="searchBar__text"
+          class="searchBar__text"
+        />
+        <button
+          id="searchBar__button"
+          class="searchBar__button"
+          title="Submit Location"
+          aria-label="Enter Zip Code or City, State and Country to retrieve weather conditions"
+        >
+         <i class="fa fa-search"></i>
+         <i class="fas fa-sync fa-spin"></i>
+        </button>
+      </form>
+    </section>
+    <a href="#currentForecast" class="skip-link">Skip to current conditions</a>
+    <section id="currentForecast" class="currentForecast" role="region" aria-labelledby="weatherLocation">
+        <h2 id="currentForecast__location" class="currentForecast__location">Current Conditions</h2>
+    </section>
+    <nav id="navButtons" class="navButtons"></nav>
+    <section id="dailyForecast" class="dailyForecast"></section>
+  </body>
+</html>
